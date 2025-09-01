@@ -1,6 +1,3 @@
-#### there is a weird problem in this code. I copied this from the online version (Qualtrics info. py) which works ok.
-#### problem is that in the final file in the age column, it enters "how old are you", but in the online verison it doesn't return that.
-#### the same is true for "unique id" column where it prints "unique id" in the first row instead of actually perticipants' unique id
 import pandas as pd
 import numpy as np
 ## 81: Complete
@@ -18,7 +15,7 @@ def getInt(str): #Gets numbers from a string, Example: From "3 yeas" Returns 3.
 
 ex = pd.read_excel('End of study Q_in-person_141.xlsx')
 for index,row in ex.iterrows():
-   # if(index == 0):   # I don't get this part! It should normally iterrate over indexes so we get participants one by one!
+   # if(index == 0):   
    #    continue
    # if(int(row[81]) == 1): # row "complete" it shows if participants have completed the experiment or not
    uniqueId = row[17] # UniqueID
